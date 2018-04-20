@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'time-line',
+  selector: 'timeline',
   templateUrl: './time-line.component.html',
   styleUrls: ['./style.scss']
 })

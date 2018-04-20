@@ -7,9 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TimelineComponent implements OnInit {
 
-  vaimerda: 'kkkkkkkkkkkk';
+  headerTitle: any;
 
-  constructor() { }
+  constructor() {
+    this.headerTitle = 'Star Wars';
+  }
 
   ngOnInit() {
   }

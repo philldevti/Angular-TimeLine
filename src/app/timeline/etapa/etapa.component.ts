@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EtapaComponent implements OnInit {
 
-  et: 'kkkkk';
-  constructor() { }
+  etapa: any;
+  constructor() {
+    this.etapa = 'teste';
+  }
 
   ngOnInit() {
   }

@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConteudoComponent implements OnInit {
 
-  conteudo = 'teste';
+  conteudo: any;
 
-  constructor() { }
+  constructor() {
+    this.conteudo = 'teste';
+  }
 
   ngOnInit() {
   }

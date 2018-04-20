@@ -7,6 +7,12 @@ import { TimeLineComponent } from './time-line/time-line.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { EtapaComponent } from './timeline/etapa/etapa.component';
 import { ConteudoComponent } from './timeline/etapa/conteudo/conteudo.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { Error404Component } from './pages/error404/error404.component';
+import { LoginComponent } from './pages/login/login.component';
+import { AuthGuard } from './services/auth/auth.guard';
 
 
 @NgModule({
@@ -15,12 +21,17 @@ import { ConteudoComponent } from './timeline/etapa/conteudo/conteudo.component'
     TimeLineComponent,
     TimelineComponent,
     EtapaComponent,
-    ConteudoComponent
+    ConteudoComponent,
+    HomeComponent,
+    AboutComponent,
+    Error404Component,
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
