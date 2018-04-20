@@ -18,10 +18,12 @@
         <conteudo detalhes="Foi legal"></conteudo>
     </etapa>
 
-    <etapa etapa="Ep.1">
-        <header header="The Phantom Menance"></header>
-        <conteudo detalhes="Foi legal"></conteudo>
+    <etapa etapa="Ep.1" (callback)="teste('Etapa')">
+        <header header="The Phantom Menance" (callback)="teste('Header')" ></header>
+        <conteudo detalhes="Foi legal">
+            <button (click)="teste('Botao dentro do conteudo')">TESTE</button>
+        </conteudo>
     </etapa>
-    
+
 </timeline>
 <!-- <timeline></timeline> -->

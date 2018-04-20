@@ -37,8 +37,8 @@
          clear: both;
      }
  }
- 
- .timeline__id {
+  
+ .timeline__id {      
      position: absolute;
      top: 1em;
      left: 2em;
@@ -109,6 +109,10 @@
      }
  }
  
+ .timeline__heading:hover, .timeline__id:hover{
+    text-decoration-line:underline;
+    cursor: pointer;
+}
  
  
  /**

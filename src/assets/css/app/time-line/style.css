@@ -113,6 +113,11 @@
   margin-bottom: 0;
 }
 
+.timeline__heading:hover, .timeline__id:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
 /**
   * Basic styling
   */
