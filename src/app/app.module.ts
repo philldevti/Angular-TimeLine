@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './services/auth/auth.guard';
+import { HeaderComponent } from './timeline/etapa/header/header.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AuthGuard } from './services/auth/auth.guard';
     HomeComponent,
     AboutComponent,
     Error404Component,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

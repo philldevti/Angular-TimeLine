@@ -1,18 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-etapa',
+  selector: 'etapa',
   templateUrl: './etapa.component.html',
   styleUrls: ['./etapa.component.css']
 })
 export class EtapaComponent implements OnInit {
 
-  etapa: any;
+  @Input() side: string;
+  @Input() etapa: any;
+
   constructor() {
-    this.etapa = 'teste';
+    this.etapa = '';
   }
 
   ngOnInit() {
   }
-
 }

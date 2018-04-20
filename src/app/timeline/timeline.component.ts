@@ -1,16 +1,16 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-timeline',
+  selector: 'timeline',
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.css']
 })
 export class TimelineComponent implements OnInit {
 
-  headerTitle: any;
+  @Input() titulo: any;
 
   constructor() {
-    this.headerTitle = 'Star Wars';
+    this.titulo = '';
   }
 
   ngOnInit() {

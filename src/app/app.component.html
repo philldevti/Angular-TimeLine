@@ -1,16 +1,27 @@
 <h1>{{title}}</h1>
 
-<nav>
+<!-- <nav>
     <a routerLink="/">Index</a>
     <a routerLink="/home">Home</a>
     <a routerLink="/about">about </a>
     </nav>
 
-    <router-outlet></router-outlet>    
+    <router-outlet></router-outlet>     -->
 
-<!-- <app-timeline >
-    <app-etapa>
-        <app-conteudo></app-conteudo>
-    </app-etapa>
-</app-timeline> -->
-<timeline></timeline>
+<timeline titulo="The Star Wars Saga order">
+
+    <etapa etapa="Ep.3">
+        <conteudo detalhes="Foi legal"></conteudo>
+    </etapa>
+
+    <etapa side="right" etapa="Ep.2">
+        <conteudo detalhes="Foi legal"></conteudo>
+    </etapa>
+
+    <etapa etapa="Ep.1">
+        <header header="The Phantom Menance"></header>
+        <conteudo detalhes="Foi legal"></conteudo>
+    </etapa>
+    
+</timeline>
+<!-- <timeline></timeline> -->

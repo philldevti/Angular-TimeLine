@@ -1,7 +1,7 @@
-<ol class="timeline">
+<ol class="outer timeline">
   <li class="timeline__entry">
     <span class="timeline__id">{{etapa}}</span>
-    <div class="timeline__content">
+    <div [ngClass]=" (side === 'right') ? 'timeline__content timeline__content--flipped' : 'timeline__content'">
         <ng-content></ng-content>
     </div>
   </li>
