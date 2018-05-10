@@ -7,7 +7,7 @@ import { TimeLineComponent } from './time-line/time-line.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { EtapaComponent } from './timeline/etapa/etapa.component';
 import { ConteudoComponent } from './timeline/etapa/conteudo/conteudo.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { Error404Component } from './pages/error404/error404.component';
